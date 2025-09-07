@@ -1,43 +1,81 @@
-<p align="center">
-    <img src="src/thumbnail.jpg" width="720" alt="logo">
-</p>
-<h1 align="center">Nezukoo-BOT</h1>
-<h3 align="center">This bot uses a library from Baileys</h3>
-<h3 align="center">Give this repository a ⭐ if you like it</h3>
+# Nezukoo-BOT
 
-Dikembangkan dengan [Node JS](https://nodejs.org/en/download/) [npm](https://www.npmjs.com/) [docker](https://docker.com)
+![Node.js](https://img.shields.io/badge/Node.js-14%2B-green?style=flat-square&logo=node.js)
+![WhatsApp](https://img.shields.io/badge/WhatsApp-Bot-blue?style=flat-square)
+![License GPL-3.0](https://img.shields.io/badge/License-GPL--3.0-red?style=flat-square)
 
-## Description
+---
 
-<p align="center">
-    <img src="src/terminal.jpg" width="400" alt="logo">
-</p>
+## 📌 Project Description
+**Nezukoo-BOT** is a WhatsApp automation bot built with **Node.js** using the **Baileys** library.  
+It comes with a wide range of plugin-based features, making it flexible, customizable, and ready for both personal and group use.
 
--   Nezukoo-BOT is a WhatsApp bot with various functions
--   There are various features available on Nezukoo-BOT
--   Fisrt you need install nodejs, npm, and gitbash to your pc
--   Please read full for instalation
+---
 
-## Installation
-- Open your terminal for example iam use (Debian) 
-```sh
-$ apt update -y
-$ apt install git -y
-$ apt install nodejs -y
-$ apt install ffmpeg -y
-$ apt install imagemagick -y
-$ git clone https://github.com/MHD1890/Nezukoo-BOT/tree/master
-$ cd Nezukoo-BOT
-$ npm i 
-$ npm start
+## 📂 Repository Structure
+
+Nezukoo_BOT/
+├── lib/ # Core modules and helpers
+├── plugins/ # Plugin-based commands and features
+├── sessions/ # WhatsApp session files
+├── src/
+├── views/
+├── Dockerfile # Container build file
+├── Procfile # For deployment (e.g., Heroku)
+├── config.js # Main bot configuration
+├── handler.js # Main event handler
+├── index.js / main.js # Entry points
+├── server.js
+├── test.js
+├── speed.py # Additional Python utility script
+├── thumbnail.jpg
+├── package.json
+└── README.md
+
+
+---
+
+## 🚀 Installation & Usage
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/maumhmd-sh/Nezukoo_BOT.git
+   cd Nezukoo_BOT
+    ```
+   
+2. Install dependencies:
 ```
-- After running, it will ask for a login method with a QRCode or WhatsApp number....
----------
+npm install
+```
 
-## Contributing
+3. Make sure your system has:
+- Node.js (v14 or higher)
+- Git
+- FFmpeg (for media processing)
+- ImageMagick (optional, required by some plugins)
 
-Silakan Fork Repository lalu lakukan update kode
+4. Start the bot:
+```
+npm start
+```
 
-Jika telah selesai update kode, lakukan Open Pull Request
+5. On the first run, the bot will request WhatsApp login (via QR code or other methods supported by Baileys).
+---
 
-Jika ada error silakan buat issue baru pada repository# Nezukoo-BOT
+## ✨ Features
+- Modular plugin system → easy to add or remove features.
+- WhatsApp session management with Baileys.
+- Media support (images, audio, video) with FFmpeg.
+- Docker and deployment-ready (Dockerfile, Procfile).
+- Includes speed.py script for extra utilities.
+
+## 📜 License
+- This project is licensed under the GPL-3.0 License — open source with copyleft terms.
+
+## 🤝 Contributing
+- Fork this repository and make your changes.
+- Create a Pull Request describing your update.
+- If you encounter bugs or have feature ideas, feel free to open an issue.
+
+## 💖 Support
+If you find Nezukoo-BOT useful, don’t forget to give it a ⭐ on GitHub and share it with others!
